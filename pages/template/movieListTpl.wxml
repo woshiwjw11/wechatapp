@@ -1,0 +1,25 @@
+<template name="movieList">
+<scroll-view scroll-y="true" bindscrolltoupper="" bindscrolltolower="loadMore" bindscroll="refresh" scroll-into-view="" scroll-top="">
+    <view wx:if="{{hasRefesh}}" style="display: flex;flex-direction: row;align-items: center;align-self: center;justify-content: center;">
+      <icon type="waiting" size="45"/><text>刷新中...</text></view>
+      <view wx:else  style="display:none" ><text></text></view>
+        <block wx:for="{{movies}}">
+            <navigator url="../detail/detail?id={{item.id}}">
+                <view class="movie">
+                <view class="pic">
+                    <image src="{{item.images.medium}}" model="aspectFit" />
+                </view>
+                <view class="movie-info">
+                    <view class="base-info">
+                        <text>{{item.text}}</text>
+                    </view>
+                    <view>{{item.id}}</view>
+                    <view>{{item.rating}}</view>
+
+                </view>
+            </view>
+            </navigator>
+            
+        </block>
+    </scroll-view> 
+</template>

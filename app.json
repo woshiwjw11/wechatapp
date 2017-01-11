@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/top250/top250",
+    "pages/search/search",
+    "pages/pinfen/pinfen",
+    "pages/detail/detail"
+  ],
+  "tabBar": {
+    "backgroundColor":"black",
+    "selectedColor":"green",
+    "list": [{
+      "pagePath": "pages/movie/movie",
+      
+      
+      "text": "影院热映"
+    }, {
+      "pagePath": "pages/top250/top250",
+     
+      "text": "电影推荐"
+    }, {
+      "pagePath": "pages/search/search",
+      
+      "text": "查询电影"
+    },
+    {
+      "pagePath":"pages/pinfen/pinfen",
+      "text":"豆瓣评分排行"
+    }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "读你电影",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": "true"
+  }
+}
