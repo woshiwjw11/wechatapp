@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/nba/nba",
+    "pages/qiuyuan/qiuyuan",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "NBA数据查询",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "black",
+    "list": [{
+      "pagePath":"pages/nba/nba",
+      
+      "text": "球队信息"
+  
+     
+    },
+    {
+      "pagePath":"pages/qiuyuan/qiuyuan",
+      "text":"球员信息"
+    },
+    {
+      "pagePath":"pages/index/index",
+      "text":"首页"
+    }
+    ]
+  }
+
+}

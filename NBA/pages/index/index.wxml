@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="title">
+  <image src="http://img1.gtimg.com/16/1656/165649/16564927_1200x1000_0.png" mode="scaleToFill"></image>
+</view>
+<view>{{message}}</view>

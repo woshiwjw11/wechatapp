@@ -1,0 +1,28 @@
+<!--pages/nba/nba.wxml-->
+<scroll-view scroll-y="true" bindscrolltoupper="" bindscrolltolower="" bindscroll="" scroll-into-view="" scroll-top="">
+	<block wx:for="{{teams}}">
+		<navigator url="../detail/detail?id={item.id}" hover-class="" redirect>
+			<view>
+				<image style="" mode="" src="https://gdc.hupucdn.com/gdc/nba/team/logo/{{item.logo}}" binderror="" bindload=""></image>
+			</view>
+			<view>
+				<view>
+					<text> {{ item.full_name }} </text>
+				</view>
+			</view>
+			<view>
+				<text> 赛区：{{ item.cn_division }} </text>
+			</view>
+			<view>
+				<text> 主教练：{{ item.chief_coach }} </text>		
+			</view>
+			<view>
+				<text> 主场：{{ item.home }} </text>		
+			</view>
+			<view>
+				<text> 简介：{{ item.intro }} </text>		
+			</view>
+
+		</navigator>
+	</block>
+</scroll-view>	

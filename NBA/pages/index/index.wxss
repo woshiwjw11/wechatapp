@@ -1,0 +1,7 @@
+/**index.wxss**/
+.title{
+  text-align: center;
+}
+.title image{
+  width: 100%;
+}
