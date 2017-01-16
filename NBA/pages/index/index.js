@@ -3,11 +3,22 @@
 var app = getApp()
 Page({
   data:{
-    message:"这个是我的的NBA小程序，主要使用功能是查询NBA的球员数据和球队信息"
+    message:"这个是我的的NBA小程序，主要使用功能是查询NBA的球员数据和球队信息",
+    img:[]
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
-    
+    wx.request({
+      url: 'http://news-at.zhihu.com/api/3/sections',
+      data: {},
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function(res){
+        // success
+        console.log(res.data);
+      }
+     
+    })
   },
   onReady:function(){
     // 生命周期函数--监听页面初次渲染完成
